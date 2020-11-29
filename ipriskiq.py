@@ -25,7 +25,7 @@ with open(str(sys.argv[3])) as file:
         for i in results['results']:
             tags = main_request(path_tags, i['resolve'])
             classification = main_request(path_classification, i['resolve'])
-            print('{} | Classification: "{}" | Tags: "{}" | Host: {}'.format(line.strip(),
+            print('{} | Classification: "{}" | Tags: "{}" | Domain: {}'.format(line.strip(),
                 classification['classification'], tags['tags'], i['resolve']))
         # Uncomment the print comment to get a line break for each IP output
         # print('')
