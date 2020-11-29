@@ -1,5 +1,5 @@
 # IPriskIQ
-IPriskIQ is a tiny python script used for host and reputation discovery.
+IPriskIQ is a tiny python script used for domain and reputation discovery.
 This script uses the RiskIQ API to get the information, so you must register in their website and obtain a valid token (https://community.riskiq.com/login)
 
 You can easily run the script using python 2.7 or above, giving the riskiq username followed by the token and providing a text file with all the IPs to be tested.
