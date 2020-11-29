@@ -1,7 +1,7 @@
 import requests
 import sys
 
-# python ipriskiq.py <your_riskiq_username> <your_riskiq_token> file.txt
+# Usage example: python ipriskiq.py <your_riskiq_username> <your_riskiq_token> file.txt
 
 username = 'your@email.com'
 key = 'your_riskiq_token'
@@ -27,5 +27,6 @@ with open(str(sys.argv[1])) as file:
             classification = main_request(path_classification, line.strip())
             print('{} | Classification: "{}" | Tags: "{}" | Host: {}'.format(line.strip(),
                 classification['classification'], tags['tags'], i['resolve']))
+        # Uncomment the print comment to get a line break for each IP output
         # print('')
         line = file.readline()
