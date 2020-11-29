@@ -3,8 +3,8 @@ import sys
 
 # Usage example: python ipriskiq.py <your_riskiq_username> <your_riskiq_token> file.txt
 
-username = 'your@email.com'
-key = 'your_riskiq_token'
+username = str(sys.argv[1])
+key = str(sys.argv[2])
 auth = (username, key)
 url = 'https://api.passivetotal.org/'
 path_passive = 'v2/dns/passive'
@@ -18,7 +18,7 @@ def main_request(path, query):
     return res.json()
 
 
-with open(str(sys.argv[1])) as file:
+with open(str(sys.argv[3])) as file:
     line = file.readline()
     while line:
         results = main_request(path_passive, line.strip())
