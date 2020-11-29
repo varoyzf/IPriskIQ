@@ -15,7 +15,7 @@ The text file must contain the IPs line by line:
 ![ips](https://user-images.githubusercontent.com/36700364/100539880-c84dd200-3239-11eb-9152-db6b56584e94.png)
 
 
-The output of the script will retrive all the different domains asociated to a single IP, the classification and the tags associated to each IP.
+The output of the script will retrive all the different domains asociated to a single IP, the classification and the tags associated to each domain.
 
 ![ipriskiq](https://user-images.githubusercontent.com/36700364/100539798-20d09f80-3239-11eb-9177-0429cbc20fff.png)
 
